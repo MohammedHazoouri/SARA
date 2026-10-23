@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Soso ✦ A Little Greeting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bokeh"></canvas>
+<div class="grain"></div>
+
+<!-- GATE -->
+<div id="gate">
+  <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="Open the greeting">
+    <div class="flap"></div><div class="seal">S</div>
+    <p class="to">for Soso</p>
+  </div>
+  <p class="hint">tap the envelope, pretty girl ♡</p>
+</div>
+
+<main id="site" class="hidden">
+  <nav>
+    <a href="#hero">Soso</a><a href="#gallery">Moments</a><a href="#music">Playlist</a>
+    <a href="#tvd">Mystic Falls</a><a href="#fashion">Fashion</a><a href="#letter">Letter</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="script small">a little something for</p>
+      <h1 class="script">Sara <span>(Soso)</span></h1>
+      <p class="typed"><span id="typed"></span><i class="caret"></i></p>
+      <div class="chips"><span>🖤 Lana girl</span><span>🧛 Mystic Falls fan</span><span>👖 Denim queen</span><span>🌙 Night-lights soul</span></div>
+      <button class="btn" id="confettiBtn">Press for a surprise ✦</button>
+    </div>
+    <div class="arch" id="tilt">
+      <img src="assets/sara.jpg" alt="Soso by the water at night">
+      <div class="ring"></div>
+      <span class="float f1">✦</span><span class="float f2">♡</span><span class="float f3">☾</span>
+    </div>
+  </section>
+
+  <div class="marquee"><div>
+    <span>Soso ✦ best friend energy ✦ golden hour ✦ baggy jeans ✦ blue jeans & white shirts ✦ Mystic Falls ✦ midnight reflections ✦ Soso ✦ best friend energy ✦ golden hour ✦ baggy jeans ✦ midnight reflections ✦</span>
+  </div></div>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2 class="script">Soso, in frames</h2>
+    <p class="sub">Tap a polaroid to flip it. Drag them around if you like.</p>
+    <div class="polas">
+      <figure class="pola p1" data-back="Night lights, a hand in her hair, and zero effort. Icon behavior.">
+        <div class="in"><div class="front"><img src="assets/sara.jpg" style="object-position:50% 30%" alt=""><figcaption>harbor girl</figcaption></div><div class="back"><p></p></div></div>
+      </figure>
+      <figure class="pola p2" data-back="The jeans. The top. The bracelet. Fashion editors, take notes.">
+        <div class="in"><div class="front"><img src="assets/01.jpg" style="object-position:50% 75%" alt=""><figcaption>the fit</figcaption></div><div class="back"><p></p></div></div>
+      </figure>
+      <figure class="pola p3" data-back="Sparkling water behind her, and still she's the brightest thing in the frame.">
+        <div class="in"><div class="front"><img src="assets/02.jpg" style="object-position:20% 10%" alt=""><figcaption>sparkle</figcaption></div><div class="back"><p></p></div></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section id="music">
+    <h2 class="script">Her Playlist</h2>
+    <p class="sub">Two worlds, one very good taste. Pick a record.</p>
+    <div class="records">
+      <div class="record lana" data-title="Blue Jeans" data-artist="Lana Del Rey">
+        <div class="vinyl"><i></i></div><h3>Lana Del Rey</h3><p>Cinematic, dreamy, vintage Americana. The soundtrack to golden-hour drives.</p>
+      </div>
+      <div class="record jb" data-title="Peaches" data-artist="Justin Bieber">
+        <div class="vinyl"><i></i></div><h3>Justin Bieber</h3><p>Smooth, nostalgic, sing-it-in-the-car energy. A pop era for every mood.</p>
+      </div>
+    </div>
+    <div class="player" id="player"><div class="eq"><b></b><b></b><b></b><b></b><b></b></div><span id="nowPlaying">Now spinning: nothing yet</span></div>
+    <div class="tracks" id="tracks"></div>
+  </section>
+
+  <!-- TVD -->
+  <section id="tvd">
+    <h2 class="script">Mystic Falls</h2>
+    <p class="sub">The Vampire Diaries cast, matched with their vibes. Flip a card.</p>
+    <div class="cards">
+      <div class="card"><div class="in"><div class="front c1"><span>🌙</span><h3>Elena</h3><p>Nina Dobrev</p></div><div class="back"><p>The heart of the show. Brave, loyal, and always there for her people. Very “best friend” of her.</p></div></div></div>
+      <div class="card"><div class="in"><div class="front c2"><span>🕯️</span><h3>Stefan</h3><p>Paul Wesley</p></div><div class="back"><p>The gentle, brooding classic. Old-soul charm with a tortured side.</p></div></div></div>
+      <div class="card"><div class="in"><div class="front c3"><span>🖤</span><h3>Damon</h3><p>Ian Somerhalder</p></div><div class="back"><p>Sarcastic, dramatic, and secretly soft. The fan-favorite chaos.</p></div></div></div>
+      <div class="card"><div class="in"><div class="front c4"><span>🌸</span><h3>Caroline</h3><p>Candice King</p></div><div class="back"><p>Sparkly, fierce, impossible not to love. Main character of every friend group.</p></div></div></div>
+      <div class="card"><div class="in"><div class="front c5"><span>🔮</span><h3>Bonnie</h3><p>Kat Graham</p></div><div class="back"><p>Powerful, strong, and the ride-or-die friend everyone deserves.</p></div></div></div>
+    </div>
+    <div class="vote">
+      <h3>The eternal question</h3>
+      <div class="bar"><div id="vs" style="width:50%">Stefan</div><div id="vd">Damon</div></div>
+      <div class="vbtns"><button data-v="s">Team Stefan</button><button data-v="d">Team Damon</button></div>
+      <p id="voteMsg">Cast your vote, Soso.</p>
+    </div>
+  </section>
+
+  <!-- FASHION -->
+  <section id="fashion">
+    <h2 class="script">Soso's Style File</h2>
+    <p class="sub">Build the look. Tap an item to switch it up.</p>
+    <div class="mixer">
+      <div class="slot" data-opts='["Black ribbed top","White tee","Satin cami","Cropped knit"]'><small>Top</small><b></b><button>↻</button></div>
+      <div class="slot" data-opts='["Baggy light-wash jeans","Distressed denim","Mini skirt","Wide-leg trousers"]'><small>Bottom</small><b></b><button>↻</button></div>
+      <div class="slot" data-opts='["Gold watch","Silver bracelets","Layered necklace","Pearl earrings"]'><small>Accessory</small><b></b><button>↻</button></div>
+      <div class="slot" data-opts='["Chunky sneakers","Ballet flats","Platform boots","Kitten heels"]'><small>Shoes</small><b></b><button>↻</button></div>
+    </div>
+    <div class="verdict"><div class="meter"><i id="meterFill"></i></div><p id="verdict"></p></div>
+    <div class="swatches"><span style="--c:#0c0f17">Midnight</span><span style="--c:#a9c3de">Denim</span><span style="--c:#f2b8c9">Blush</span><span style="--c:#d9b77a">Gold</span><span style="--c:#f5eef0">Pearl</span></div>
+  </section>
+
+  <!-- LETTER -->
+  <section id="letter">
+    <h2 class="script">A note, just for you</h2>
+    <div class="paper">
+      <p>Dear Soso,</p>
+      <p id="letterText">Thank you for being the kind of friend who makes ordinary days feel like a movie scene. Your style, your taste, your laugh. Everything about you is its own little vibe. I'm so glad you're in my life, and I hope this year is as bright as the lights on the water. Sending you the biggest hug and all my best wishes.</p>
+      <p class="sign script">Your friend ♡</p>
+    </div>
+    <h3 class="why">Why you're the best (tap to reveal)</h3>
+    <div class="reasons">
+      <button data-t="You always have the best taste.">1</button>
+      <button data-t="You make me laugh without trying.">2</button>
+      <button data-t="You're a real, loyal friend.">3</button>
+      <button data-t="Your outfits? Always perfect.">4</button>
+      <button data-t="You make every plan more fun.">5</button>
+      <button data-t="You're simply Soso, and that's the best.">6</button>
+    </div>
+    <p id="reasonMsg" class="rm">pick a heart ✦</p>
+  </section>
+
+  <footer>Made with love for Soso ✦ best friends forever ✦ <a href="#hero">back to top ↑</a></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
